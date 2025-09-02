@@ -153,3 +153,100 @@ border: 1px solid transparent;
     background-color: var(--primary-bg);
     border: 1px solid var(--border-white);
 }
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .explore-card {
+        margin: 0;
+        padding: 12px;
+        width: 100%;
+        max-width: none;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        border-radius: 12px;
+    }
+    
+    .explore-card-cover {
+        height: 220px;
+        width: 100%;
+    }
+    
+    .res-name {
+        font-size: 16px;
+        max-width: 70%;
+    }
+    
+    .res-rating {
+        padding: 0 8px;
+        font-size: 12px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .res-cuisine {
+        font-size: 13px;
+        max-width: 65%;
+    }
+    
+    .res-price {
+        font-size: 13px;
+    }
+    
+    .res-bottom-text {
+        font-size: 11px;
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .explore-card {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+        max-width: none;
+    }
+    
+    .explore-card-cover {
+        height: 200px;
+        width: 100%;
+    }
+    
+    .res-name {
+        font-size: 15px;
+        max-width: 65%;
+    }
+    
+    .res-rating {
+        padding: 0 6px;
+        font-size: 11px;
+        height: 22px;
+    }
+    
+    .res-cuisine {
+        font-size: 12px;
+        max-width: 60%;
+    }
+    
+    .res-price {
+        font-size: 12px;
+    }
+    
+    .res-bottom-text {
+        font-size: 10px;
+        max-width: 65%;
+        margin-left: 6px;
+    }
+    
+    .delivery-time {
+        font-size: 10px;
+        padding: 2px 4px;
+        right: 8px;
+        bottom: 8px;
+    }
+    
+    .proOffer, .discount, .goldOffer {
+        font-size: 12px;
+        padding: 0 5px;
+        line-height: 18px;
+    }
+}

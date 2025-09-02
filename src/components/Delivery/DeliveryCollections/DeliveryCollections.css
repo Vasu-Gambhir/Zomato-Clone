@@ -4,3 +4,16 @@
     padding: 40px 0px;
 }
 
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .delivery-collections {
+        padding: 24px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .delivery-collections {
+        padding: 16px 0;
+    }
+}
+

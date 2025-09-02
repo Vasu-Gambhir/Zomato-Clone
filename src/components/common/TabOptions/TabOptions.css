@@ -37,3 +37,71 @@
 .active-tab .tab-name{
     color: var(--zomato-red);
 }
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .tab-options {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .options-wrapper {
+        justify-content: flex-start;
+        padding: 0 12px;
+        min-width: max-content;
+        gap: 8px;
+    }
+    
+    .tab-item {
+        margin-right: 16px;
+        padding: 8px 4px 16px 4px;
+        flex: 0 0 auto;
+        text-align: center;
+        min-width: 80px;
+    }
+    
+    .tab-name {
+        font-size: 14px;
+        margin-left: 4px;
+        margin-top: 8px;
+    }
+    
+    .tab-image-container {
+        height: 50px;
+        width: 50px;
+        margin: 0 auto;
+    }
+    
+    .tab-image {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .options-wrapper {
+        padding: 0 8px;
+    }
+    
+    .tab-item {
+        padding: 6px 2px 12px 2px;
+        margin-right: 12px;
+        min-width: 70px;
+    }
+    
+    .tab-name {
+        font-size: 12px;
+        margin-left: 0;
+        margin-top: 6px;
+    }
+    
+    .tab-image-container {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .tab-image {
+        height: 20px;
+        width: 20px;
+    }
+}

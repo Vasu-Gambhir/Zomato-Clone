@@ -1,0 +1,108 @@
+/* Global Mobile Styles for Better Responsiveness */
+
+/* Base mobile styles */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Prevent horizontal scroll */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  /* App container */
+  #root {
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  /* Improve touch targets */
+  button, a, .cursor-pointer {
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+  
+  /* Fix iOS input zoom */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+  
+  /* Smooth scrolling carousels */
+  .slick-list {
+    overflow: visible;
+  }
+  
+  .slick-track {
+    display: flex !important;
+    align-items: stretch;
+  }
+  
+  .slick-slide {
+    height: auto;
+    float: none;
+  }
+  
+  .slick-slide > div {
+    height: 100%;
+  }
+}
+
+/* Very small screens */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+  
+  /* Stack elements vertically on small screens */
+  .flex-row-mobile-column {
+    flex-direction: column !important;
+  }
+  
+  /* Full width on mobile */
+  .mobile-full-width {
+    width: 100% !important;
+  }
+  
+  /* Hide on mobile */
+  .hide-mobile {
+    display: none !important;
+  }
+  
+  /* Show only on mobile */
+  .show-mobile {
+    display: block !important;
+  }
+}
+
+/* Landscape orientation fixes */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 8px 16px;
+  }
+  
+  .main-content {
+    margin-top: 120px;
+  }
+}
+
+/* Fix for webkit tap highlight */
+* {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+/* Improve touch scrolling */
+.touch-scroll {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}

@@ -12,3 +12,34 @@
 .filter-name{
     margin-left: 5px;
 }
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .filter-item {
+        padding: 8px 12px;
+        margin: 0 8px 0 0;
+        font-size: 13px;
+        flex: 0 0 auto;
+        white-space: nowrap;
+        min-height: 36px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .filter-name {
+        margin-left: 4px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .filter-item {
+        padding: 6px 10px;
+        margin: 0 6px 0 0;
+        font-size: 12px;
+        min-height: 32px;
+    }
+    
+    .filter-name {
+        margin-left: 3px;
+    }
+}

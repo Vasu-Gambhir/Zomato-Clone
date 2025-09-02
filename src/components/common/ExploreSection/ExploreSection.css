@@ -7,3 +7,30 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .explore-section {
+        margin-top: 12px;
+    }
+    
+    .explore-grid {
+        justify-content: center;
+        gap: 16px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .explore-section {
+        margin-top: 8px;
+    }
+    
+    .explore-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0 12px;
+    }
+}

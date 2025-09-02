@@ -20,3 +20,28 @@
     overflow: hidden;
     margin-top: 6px;
 }
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .delivery-item-cover {
+        height: 160px;
+        width: 220px;
+    }
+    
+    .delivery-item-title {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .delivery-item-cover {
+        height: 140px;
+        width: 180px;
+    }
+    
+    .delivery-item-title {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+}

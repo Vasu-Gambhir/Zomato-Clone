@@ -64,3 +64,73 @@
     bottom: 10px;
     font-size: 14px;
 }
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .collection {
+        padding: 16px 0 32px;
+    }
+    
+    .collection-cover {
+        height: 260px;
+        width: 200px;
+        margin-right: 12px;
+        flex: 0 0 200px;
+    }
+    
+    .collection-card-title {
+        font-size: 16px;
+        left: 12px;
+        bottom: 28px;
+        line-height: 1.3;
+    }
+    
+    .collection-card-subtitle {
+        font-size: 12px;
+        left: 12px;
+        bottom: 8px;
+    }
+    
+    .collection-subtitle-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .collection {
+        padding: 12px 0 24px;
+    }
+    
+    .collection-cover {
+        height: 220px;
+        width: 160px;
+        margin-right: 10px;
+        flex: 0 0 160px;
+    }
+    
+    .collection-card-title {
+        font-size: 14px;
+        left: 10px;
+        bottom: 24px;
+        line-height: 1.2;
+        max-width: 140px;
+    }
+    
+    .collection-card-subtitle {
+        font-size: 11px;
+        left: 10px;
+        bottom: 6px;
+        max-width: 140px;
+    }
+    
+    .collection-subtitle-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .collection-subtitle-text {
+        font-size: 12px;
+    }
+}
